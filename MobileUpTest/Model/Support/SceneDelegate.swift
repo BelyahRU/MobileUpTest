@@ -12,19 +12,22 @@ import VKIDCore
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var coordinator: MainCoordinator!
     var vkid: VKID!
     
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
-//        setupVKid()
-                
-        window = UIWindow(windowScene: windowScene)
-        let viewController = AuthViewController()
-//        viewController.vkid = vkid
-        window?.rootViewController = UINavigationController(rootViewController: viewController)
-        window?.makeKeyAndVisible()
+        self.window = UIWindow(windowScene: windowScene)
+        setupVKid()
+        
+        coordinator = MainCoordinator()
+        coordinator.start() // Запускаем координатор
+            
+        self.window?.rootViewController = coordinator.navigationController
+        self.window?.makeKeyAndVisible()
+        
     }
     
     func setupVKid() {

@@ -1,5 +1,5 @@
 //
-//  AuthViewController.swift
+//  LogiViewController.swift
 //  MobileUpTest
 //
 //  Created by Александр Андреев on 22.08.2024.
@@ -10,11 +10,11 @@ import UIKit
 import WebKit
 import SnapKit
 
-class AuthViewController: UIViewController, WKNavigationDelegate {
+class LoginViewController: UIViewController, WKNavigationDelegate {
     
     //MARK: - Properties
-    public var coordinator: AuthCoordinator!
-    public var authView = AuthView()
+    public var coordinator: MainCoordinator!
+    public var authView = LoginView()
     public var loginButton: UIButton!
     
     //MARK: - Life cycle
@@ -25,6 +25,7 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
     
     //MARK: - Methods
     private func configure() {
+        setupButton() // in extension
         setupUI()
     }
     

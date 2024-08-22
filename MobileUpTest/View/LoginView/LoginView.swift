@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SnapKit
 
-class AuthView: UIView {
+class LoginView: UIView {
     
     //MARK: - Properties
     private let headerLabel: UILabel = {

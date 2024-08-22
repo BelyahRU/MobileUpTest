@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 //MARK: - Action
-extension AuthViewController {
+extension LoginViewController {
     public func setupButton() {
         loginButton = authView.loginButton
         loginButton.addTarget(self, action: #selector(loginPressed), for: .touchUpInside)
@@ -17,6 +17,6 @@ extension AuthViewController {
     
     @objc
     func loginPressed() {
-        
+        coordinator?.showAuthorization()
     }
 }
