@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A64BA8F2C77A3BB00869959 /* VKID in Frameworks */ = {isa = PBXBuildFile; productRef = 1A64BA8E2C77A3BB00869959 /* VKID */; };
+		1A64BA912C77A3BB00869959 /* VKIDCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1A64BA902C77A3BB00869959 /* VKIDCore */; };
+		1A64BA932C77E70200869959 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BA922C77E70200869959 /* AuthView.swift */; };
+		1A64BA9B2C77E8EF00869959 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A64BA9A2C77E8EF00869959 /* SnapKit */; };
+		1A64BA9D2C77EB7B00869959 /* AuthVC + Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BA9C2C77EB7B00869959 /* AuthVC + Action.swift */; };
 		1A9A7D2D2C777A5100BF78A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A7D2C2C777A5100BF78A0 /* AppDelegate.swift */; };
 		1A9A7D2F2C777A5100BF78A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A7D2E2C777A5100BF78A0 /* SceneDelegate.swift */; };
 		1A9A7D312C777A5100BF78A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A7D302C777A5100BF78A0 /* ViewController.swift */; };
@@ -18,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A64BA922C77E70200869959 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		1A64BA9C2C77EB7B00869959 /* AuthVC + Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthVC + Action.swift"; sourceTree = "<group>"; };
 		1A9A7D292C777A5100BF78A0 /* MobileUpTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileUpTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9A7D2C2C777A5100BF78A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A9A7D2E2C777A5100BF78A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A64BA9B2C77E8EF00869959 /* SnapKit in Frameworks */,
+				1A64BA8F2C77A3BB00869959 /* VKID in Frameworks */,
+				1A64BA912C77A3BB00869959 /* VKIDCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +134,9 @@
 		1A9A7D4A2C777FD800BF78A0 /* AuthView */ = {
 			isa = PBXGroup;
 			children = (
+				1A64BA922C77E70200869959 /* AuthView.swift */,
 				1A9A7D4B2C777FE300BF78A0 /* AuthViewController.swift */,
+				1A64BA9C2C77EB7B00869959 /* AuthVC + Action.swift */,
 			);
 			path = AuthView;
 			sourceTree = "<group>";
@@ -145,6 +157,11 @@
 			dependencies = (
 			);
 			name = MobileUpTest;
+			packageProductDependencies = (
+				1A64BA8E2C77A3BB00869959 /* VKID */,
+				1A64BA902C77A3BB00869959 /* VKIDCore */,
+				1A64BA9A2C77E8EF00869959 /* SnapKit */,
+			);
 			productName = MobileUpTest;
 			productReference = 1A9A7D292C777A5100BF78A0 /* MobileUpTest.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +190,10 @@
 				Base,
 			);
 			mainGroup = 1A9A7D202C777A5100BF78A0;
+			packageReferences = (
+				1A64BA8D2C77A3BB00869959 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */,
+				1A64BA992C77E8EE00869959 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 1A9A7D2A2C777A5100BF78A0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -199,9 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A64BA932C77E70200869959 /* AuthView.swift in Sources */,
 				1A9A7D492C777FAD00BF78A0 /* AuthCoordinator.swift in Sources */,
 				1A9A7D472C777F3D00BF78A0 /* Coordinator.swift in Sources */,
 				1A9A7D312C777A5100BF78A0 /* ViewController.swift in Sources */,
+				1A64BA9D2C77EB7B00869959 /* AuthVC + Action.swift in Sources */,
 				1A9A7D2D2C777A5100BF78A0 /* AppDelegate.swift in Sources */,
 				1A9A7D4C2C777FE300BF78A0 /* AuthViewController.swift in Sources */,
 				1A9A7D2F2C777A5100BF78A0 /* SceneDelegate.swift in Sources */,
@@ -348,12 +371,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD4CB63926;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MobileUpTest/Model/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,12 +399,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CD4CB63926;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MobileUpTest/Model/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -415,6 +442,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A64BA8D2C77A3BB00869959 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VKCOM/vkid-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+		1A64BA992C77E8EE00869959 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A64BA8E2C77A3BB00869959 /* VKID */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A64BA8D2C77A3BB00869959 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */;
+			productName = VKID;
+		};
+		1A64BA902C77A3BB00869959 /* VKIDCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A64BA8D2C77A3BB00869959 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */;
+			productName = VKIDCore;
+		};
+		1A64BA9A2C77E8EF00869959 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A64BA992C77E8EE00869959 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A9A7D212C777A5100BF78A0 /* Project object */;
 }

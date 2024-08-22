@@ -6,18 +6,40 @@
 //
 
 import UIKit
+import VKID
+import VKIDCore
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var vkid: VKID!
+    
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
+//        setupVKid()
+                
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = ViewController()
+        let viewController = AuthViewController()
+//        viewController.vkid = vkid
+        window?.rootViewController = UINavigationController(rootViewController: viewController)
         window?.makeKeyAndVisible()
+    }
+    
+    func setupVKid() {
+        do {
+            self.vkid = try VKID(
+                config: Configuration(
+                    appCredentials: AppCredentials(
+                        clientId: "52194798",         // ID вашего приложения
+                        clientSecret: "6zu9hvfv8en3cdimE8is"  // ваш защищенный ключ (client_secret)
+                    )
+                )
+            )
+        } catch {
+            preconditionFailure("Failed to initialize VKID: \(error)")
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

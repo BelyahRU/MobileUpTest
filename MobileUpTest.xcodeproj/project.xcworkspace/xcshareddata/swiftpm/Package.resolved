@@ -1,0 +1,24 @@
+{
+  "originHash" : "82dc1616b4c0ca3985d4f7369ece9945bf67d04a2671c46411d24dd1221872de",
+  "pins" : [
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "vkid-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/VKCOM/vkid-ios-sdk.git",
+      "state" : {
+        "revision" : "7c8ea8434f88cd0d04b071d087fc5e4a0a849ea2",
+        "version" : "2.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}
