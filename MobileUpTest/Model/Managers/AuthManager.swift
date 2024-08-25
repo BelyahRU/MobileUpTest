@@ -38,6 +38,7 @@ class AuthManager {
     public var shouldRefreshToken: Bool {
         
         guard let expirationDate = tokenExpirationDate else {
+            print("[LOGGER][AuthManager]: Token expiration date is end.")
             return false
         }
         
@@ -53,6 +54,7 @@ class AuthManager {
         
         // Убедимся, что у нас есть часть с параметрами
         guard components.count > 1 else {
+            print("[LOGGER][AuthManager][Authorization]: String components <= 1.")
             completion(false)
             return
         }
@@ -75,6 +77,7 @@ class AuthManager {
         guard let accessToken = parameters["access_token"],
               let expiresDateString = parameters["expires_in"],
               let expiresIn = Int(expiresDateString) else {
+            print("[LOGGER][AuthManager][Authorization]: Error with extracting token parameters.")
             completion(false)
             return
         }
@@ -84,6 +87,7 @@ class AuthManager {
         
         // Сообщаем об успешной авторизации
         completion(true)
+        print("[LOGGER][AuthManager]: Auth success.")
     }
 
     
@@ -95,6 +99,7 @@ class AuthManager {
         UserDefaults.standard.setValue(nil, forKey: "expires_in")
         
         completion(true)
+        print("[LOGGER][AuthManager]: User signed out.")
     }
     
     
@@ -104,7 +109,7 @@ class AuthManager {
         UserDefaults.standard.setValue(token, forKey: "access_token")
         
         UserDefaults.standard.setValue(Date().addingTimeInterval(TimeInterval(expires_in)), forKey: "expires_in")
-        
+        print("[LOGGER][AuthManager]: Token saved.")
     }
 
 }
