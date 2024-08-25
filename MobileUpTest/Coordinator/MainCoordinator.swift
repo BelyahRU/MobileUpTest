@@ -72,4 +72,16 @@ class MainCoordinator: Coordinator {
         navigationController.present(alert, animated: true)
         print("[LOGGER][MainCoordinator]: SignOutError. AlertController loaded.")
     }
+    
+    //MARK: - Loading photos error
+    public func showErrorLoadingPhotosMessage(error: String) {
+        let title = "Ошибка загрузки фото"
+        let message = "Не удалось загрузить фото: \(error)"
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
+        
+        navigationController.present(alert, animated: true)
+        print("[LOGGER][MainCoordinator]: LoadingPhotosError. AlertController loaded.")
+    }
 }

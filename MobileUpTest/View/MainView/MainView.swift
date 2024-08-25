@@ -41,7 +41,6 @@ class MainView: UIView {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let colView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        colView.backgroundColor = .black
         colView.isHidden = false
         return colView
     }()
@@ -50,9 +49,14 @@ class MainView: UIView {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let colView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        colView.backgroundColor = .blue
         colView.isHidden = true
         return colView
+    }()
+    
+    public let loadingIndicatior: UIActivityIndicatorView = {
+       let view = UIActivityIndicatorView()
+        view.isHidden = true
+        return view
     }()
     
     //MARK: Initialize
@@ -82,6 +86,7 @@ class MainView: UIView {
         addSubview(photoVideoSegmentPicker)
         addSubview(photosCollectionView)
         addSubview(videosCollectionView)
+        addSubview(loadingIndicatior)
     }
     
     private func setupConstraints() {
@@ -110,6 +115,10 @@ class MainView: UIView {
         videosCollectionView.snp.makeConstraints { make in
             make.top.equalTo(photoVideoSegmentPicker.snp.bottom).offset(8)
             make.leading.bottom.trailing.equalToSuperview()
+        }
+        
+        loadingIndicatior.snp.makeConstraints { make in
+            make.center.equalToSuperview()
         }
     }
 }

@@ -15,7 +15,8 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     
     private let photoImageView: UIImageView = {
         let im = UIImageView()
-        
+        im.contentMode = .scaleAspectFill
+        im.clipsToBounds = true
         return im
     }()
     
@@ -29,7 +30,13 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     //MARK: - Methods
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        photoImageView.image = nil
+    }
+    
     private func setupUI() {
         addSubview(photoImageView)
         photoImageView.snp.makeConstraints { make in
@@ -42,5 +49,9 @@ class PhotoCollectionViewCell: UICollectionViewCell {
 extension PhotoCollectionViewCell {
     public func setupCell(imageData: Data) {
         photoImageView.image = UIImage(data: imageData)
+    }
+    
+    public func configure(with model: PhotosViewModel) {
+//        photoImageView.image = nil
     }
 }
