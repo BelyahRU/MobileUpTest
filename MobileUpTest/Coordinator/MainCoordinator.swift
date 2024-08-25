@@ -11,7 +11,7 @@ import UIKit
 class MainCoordinator: Coordinator {
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
-    let authService = AuthService()
+    let viewModel = AuthViewModel()
     
     var authCoordinator: AuthCoordinator!
     var mainViewController: MainViewController!
@@ -22,7 +22,7 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        if authService.isUserSignedIn() {
+        if viewModel.isUserSignedIn() {
             print("[LOGGER][MainCoordinator]: User singned in.")
             showMain()
         } else {
@@ -51,7 +51,7 @@ class MainCoordinator: Coordinator {
     //MARK: - Sign out
     func didTapLogout() {
         print("[LOGGER][MainCoordinator]: User tapped logout.")
-        authService.signOut { [weak self] success in
+        viewModel.signOut { [weak self] success in
             if success {
                 self?.navigationController.popToRootViewController(animated: true)
                 self?.startAuthFlow()

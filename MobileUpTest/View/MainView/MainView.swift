@@ -37,6 +37,8 @@ class MainView: UIView {
         return control
     }()
     
+    
+    
     //MARK: Initialize
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -1,13 +1,13 @@
 //
-//  AuthService.swift
+//  AuthViewModel.swift
 //  MobileUpTest
 //
 //  Created by Александр Андреев on 25.08.2024.
 //
 
 import Foundation
-
-final class AuthService {
+final class AuthViewModel {
+    
     private let authManager = AuthManager.shared
     
     func isUserSignedIn() -> Bool {
