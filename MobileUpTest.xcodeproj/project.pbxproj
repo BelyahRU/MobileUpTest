@@ -21,6 +21,8 @@
 		1A64BAB12C7B6C8300869959 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAB02C7B6C8300869959 /* MainViewController.swift */; };
 		1A64BAB42C7B713B00869959 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAB32C7B713B00869959 /* AuthService.swift */; };
 		1A64BAB62C7B715400869959 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAB52C7B715400869959 /* AuthCoordinator.swift */; };
+		1A64BAB82C7B75CF00869959 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAB72C7B75CF00869959 /* MainView.swift */; };
+		1A64BABA2C7B7BD700869959 /* MainVC + Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAB92C7B7BD700869959 /* MainVC + Action.swift */; };
 		1A9A7D2D2C777A5100BF78A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A7D2C2C777A5100BF78A0 /* AppDelegate.swift */; };
 		1A9A7D2F2C777A5100BF78A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A7D2E2C777A5100BF78A0 /* SceneDelegate.swift */; };
 		1A9A7D362C777A5300BF78A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A7D352C777A5300BF78A0 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		1A64BAB02C7B6C8300869959 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1A64BAB32C7B713B00869959 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		1A64BAB52C7B715400869959 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		1A64BAB72C7B75CF00869959 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1A64BAB92C7B7BD700869959 /* MainVC + Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC + Action.swift"; sourceTree = "<group>"; };
 		1A9A7D292C777A5100BF78A0 /* MobileUpTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileUpTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9A7D2C2C777A5100BF78A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A9A7D2E2C777A5100BF78A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				1A64BAB02C7B6C8300869959 /* MainViewController.swift */,
+				1A64BAB72C7B75CF00869959 /* MainView.swift */,
+				1A64BAB92C7B7BD700869959 /* MainVC + Action.swift */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -295,11 +301,13 @@
 				1A64BAB12C7B6C8300869959 /* MainViewController.swift in Sources */,
 				1A64BAA02C77F0F000869959 /* AuthorizationViewController.swift in Sources */,
 				1A9A7D2D2C777A5100BF78A0 /* AppDelegate.swift in Sources */,
+				1A64BAB82C7B75CF00869959 /* MainView.swift in Sources */,
 				1A64BAAD2C7800F700869959 /* AuthorizationVC + WKNavigationDelegate.swift in Sources */,
 				1A9A7D4C2C777FE300BF78A0 /* LoginViewController.swift in Sources */,
 				1A64BAB42C7B713B00869959 /* AuthService.swift in Sources */,
 				1A64BAA92C77FE8200869959 /* NetworkErrorView + Action.swift in Sources */,
 				1A9A7D2F2C777A5100BF78A0 /* SceneDelegate.swift in Sources */,
+				1A64BABA2C7B7BD700869959 /* MainVC + Action.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

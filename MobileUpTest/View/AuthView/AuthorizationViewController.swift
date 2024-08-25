@@ -12,7 +12,7 @@ import WebKit
 class AuthorizationViewController: UIViewController{
     
     //MARK: - Properties
-    var coordinator: AuthCoordinator?
+    weak var coordinator: AuthCoordinator?
     
     public let noConnectionView: NetworkErrorView = {
         let view = NetworkErrorView()

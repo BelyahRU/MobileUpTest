@@ -31,6 +31,7 @@ class MainCoordinator: Coordinator {
         }
     }
     
+    //MARK: - AuthCoordinator
     private func startAuthFlow() {
         authCoordinator = AuthCoordinator(navigationController: navigationController)
         authCoordinator.parentCoordinator = self
@@ -39,6 +40,7 @@ class MainCoordinator: Coordinator {
         print("[LOGGER][MainCoordinator]: AuthCoordinator started.")
     }
     
+    //MARK: - MainViewController
     private func showMain() {
         mainViewController = MainViewController()
         mainViewController.coordinator = self
@@ -46,6 +48,7 @@ class MainCoordinator: Coordinator {
         print("[LOGGER][MainCoordinator]: MainViewController loaded.")
     }
     
+    //MARK: - Sign out
     func didTapLogout() {
         print("[LOGGER][MainCoordinator]: User tapped logout.")
         authService.signOut { [weak self] success in
@@ -58,6 +61,7 @@ class MainCoordinator: Coordinator {
         }
     }
     
+    //MARK: - Sign out error
     private func showErrorSignOutMessage() {
         let title = "Ошибка выхода"
         let message = "Не удалось выйти из аккаунта. Попробуйте ещё раз."

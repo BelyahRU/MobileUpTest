@@ -13,7 +13,8 @@ import SnapKit
 class LoginViewController: UIViewController, WKNavigationDelegate {
     
     //MARK: - Properties
-    public var coordinator: AuthCoordinator!
+    weak var coordinator: AuthCoordinator!
+    
     public var authView = LoginView()
     public var loginButton: UIButton!
     

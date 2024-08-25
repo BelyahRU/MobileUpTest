@@ -13,6 +13,9 @@ class AuthCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     weak var parentCoordinator: MainCoordinator?
     
+    var authViewController: AuthorizationViewController!
+    var loginViewController: LoginViewController!
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
@@ -21,15 +24,17 @@ class AuthCoordinator: Coordinator {
         showLogin()
     }
     
+    //MARK: - LoginViewController
     private func showLogin() {
-        let loginViewController = LoginViewController()
+        loginViewController = LoginViewController()
         loginViewController.coordinator = self
         navigationController.pushViewController(loginViewController, animated: true)
         print("[LOGGER][AuthCoordinator]: LoginViewController loaded.")
     }
     
+    //MARK: - AuthorizationViewController
     public func showAuthorization() {
-        let authViewController = AuthorizationViewController()
+        authViewController = AuthorizationViewController()
         authViewController.coordinator = self
         
         authViewController.authCompletion = { [weak self] success in
@@ -45,6 +50,7 @@ class AuthCoordinator: Coordinator {
         print("[LOGGER][AuthCoordinator]: AuthorizationViewController loaded.")
     }
     
+    //MARK: - Authorization error
     private func showErrorAuthMessage() {
         let title = "Ошибка авторизации"
         let message = "Авторизация прошла с ошибкой. Попробуйте позднее"

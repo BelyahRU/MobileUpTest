@@ -10,10 +10,25 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    var coordinator: MainCoordinator?
+    weak var coordinator: MainCoordinator?
+
+    public var mainView = MainView()
+    public var signOutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configure()
+    }
+    
+    private func configure() {
+        setupUI()
+        setupButtons()
+    }
+    
+    private func setupUI() {
+        view.addSubview(mainView)
+        mainView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
     }
 }
