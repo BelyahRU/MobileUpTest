@@ -98,14 +98,14 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		1A64BAAF2C7B6C6F00869959 /* MainViewController */ = {
+		1A64BAAF2C7B6C6F00869959 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
 				1A64BAB02C7B6C8300869959 /* MainViewController.swift */,
 				1A64BAB72C7B75CF00869959 /* MainView.swift */,
 				1A64BAB92C7B7BD700869959 /* MainVC + Action.swift */,
 			);
-			path = MainViewController;
+			path = MainView;
 			sourceTree = "<group>";
 		};
 		1A64BAB22C7B712900869959 /* Services */ = {
@@ -174,7 +174,7 @@
 		1A9A7D432C777DBC00BF78A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A64BAAF2C7B6C6F00869959 /* MainViewController */,
+				1A64BAAF2C7B6C6F00869959 /* MainView */,
 				1A64BAA52C77FDE600869959 /* NetworkErrorView */,
 				1A64BA9E2C77F0E100869959 /* LoginView */,
 				1A9A7D4A2C777FD800BF78A0 /* AuthView */,

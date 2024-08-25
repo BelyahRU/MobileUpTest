@@ -29,6 +29,14 @@ class MainView: UIView {
         return button
     }()
     
+    public let photoVideoSegmentPicker: UISegmentedControl = {
+        let items = ["Фото", "Видео"]
+        let control = UISegmentedControl(items: items)
+        control.selectedSegmentIndex = 0
+        control.backgroundColor = .white
+        return control
+    }()
+    
     //MARK: Initialize
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -53,6 +61,7 @@ class MainView: UIView {
     private func setupSubviews() {
         addSubview(headerTitleLabel)
         addSubview(signOutButton)
+        addSubview(photoVideoSegmentPicker)
     }
     
     private func setupConstraints() {
@@ -64,6 +73,13 @@ class MainView: UIView {
         signOutButton.snp.makeConstraints { make in
             make.centerY.equalTo(headerTitleLabel.snp.centerY)
             make.trailing.equalToSuperview().inset(12)
+        }
+        
+        photoVideoSegmentPicker.snp.makeConstraints { make in
+            make.top.equalTo(headerTitleLabel.snp.bottom).offset(14)
+            make.leading.equalToSuperview().offset(16)
+            make.trailing.equalToSuperview().inset(16)
+            make.height.equalTo(32)
         }
     }
 }

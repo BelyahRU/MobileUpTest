@@ -10,19 +10,23 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    //MARK: Properties
     weak var coordinator: MainCoordinator?
 
     public var mainView = MainView()
     public var signOutButton: UIButton!
+    public var segmentControl: UISegmentedControl!
     
+    //MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
     }
     
+    //MARK: Methods
     private func configure() {
         setupUI()
-        setupButtons()
+        setupActions()
     }
     
     private func setupUI() {
