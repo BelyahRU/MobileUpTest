@@ -12,10 +12,7 @@ import UIKit
 extension MainViewController {
     
     public func setupActions() {
-        signOutButton = mainView.signOutButton
         signOutButton.addTarget(self, action: #selector(signOutPressed), for: .touchUpInside)
-        
-        segmentControl = mainView.photoVideoSegmentPicker
         segmentControl.addTarget(self, action: #selector(segmentChanged(_:)), for: .valueChanged)
         
     }
@@ -31,9 +28,13 @@ extension MainViewController {
         case 0:
             print("[LOGGER][MainViewController]: Photos selected")
             //ADD: - logic for photos
+            photosCollectionView.isHidden = false
+            videosCollectionView.isHidden = true
         case 1:
             print("[LOGGER][MainViewController]: Videos selected")
             //ADD: - logic for videos
+            photosCollectionView.isHidden = true
+            videosCollectionView.isHidden = false
         default:
             break
         }

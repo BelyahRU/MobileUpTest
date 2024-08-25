@@ -37,7 +37,23 @@ class MainView: UIView {
         return control
     }()
     
+    public let photosCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        let colView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        colView.backgroundColor = .black
+        colView.isHidden = false
+        return colView
+    }()
     
+    public let videosCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        let colView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        colView.backgroundColor = .blue
+        colView.isHidden = true
+        return colView
+    }()
     
     //MARK: Initialize
     override init(frame: CGRect) {
@@ -64,6 +80,8 @@ class MainView: UIView {
         addSubview(headerTitleLabel)
         addSubview(signOutButton)
         addSubview(photoVideoSegmentPicker)
+        addSubview(photosCollectionView)
+        addSubview(videosCollectionView)
     }
     
     private func setupConstraints() {
@@ -82,6 +100,16 @@ class MainView: UIView {
             make.leading.equalToSuperview().offset(16)
             make.trailing.equalToSuperview().inset(16)
             make.height.equalTo(32)
+        }
+        
+        photosCollectionView.snp.makeConstraints { make in
+            make.top.equalTo(photoVideoSegmentPicker.snp.bottom).offset(8)
+            make.leading.bottom.trailing.equalToSuperview()
+        }
+        
+        videosCollectionView.snp.makeConstraints { make in
+            make.top.equalTo(photoVideoSegmentPicker.snp.bottom).offset(8)
+            make.leading.bottom.trailing.equalToSuperview()
         }
     }
 }
