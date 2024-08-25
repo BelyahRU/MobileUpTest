@@ -9,74 +9,63 @@ import Foundation
 import UIKit
 // Главный координатор
 class MainCoordinator: Coordinator {
-    
     var navigationController: UINavigationController
-    var childCoordinators: [Coordinator] = [] // Массив для хранения дочерних координаторов
-    var loginViewController: LoginViewController!
+    var childCoordinators: [Coordinator] = []
+    let authService = AuthService()
     
-    init() {
-        self.navigationController = UINavigationController()
+    var authCoordinator: AuthCoordinator!
+    var mainViewController: MainViewController!
+    
+    init(navigationController: UINavigationController = UINavigationController()) {
+        self.navigationController = navigationController
         self.navigationController.navigationBar.isHidden = true
     }
     
     func start() {
-        let shared = AuthManager.shared
-        
-        if shared.isSignedIn && !shared.shouldRefreshToken {
+        if authService.isUserSignedIn() {
+            print("[LOGGER][MainCoordinator]: User singned in.")
             showMain()
         } else {
-            showLogin()
+            print("[LOGGER][MainCoordinator]: User not singned in or token should refresh.")
+            startAuthFlow()
         }
     }
     
-    public func showLogin() {
-        print("coordinators: \(childCoordinators)")
-        loginViewController = LoginViewController()
-        loginViewController.coordinator = self
-        navigationController.pushViewController(loginViewController, animated: false)
+    private func startAuthFlow() {
+        authCoordinator = AuthCoordinator(navigationController: navigationController)
+        authCoordinator.parentCoordinator = self
+        childCoordinators.append(authCoordinator)
+        authCoordinator.start()
+        print("[LOGGER][MainCoordinator]: AuthCoordinator started.")
     }
     
-    public func showAuthorization() {
-        
-        let loginVC = AuthorizationViewController()
-        loginVC.coordinator = self
-        
-        loginVC.authCompletion = { [weak self] success in
+    private func showMain() {
+        mainViewController = MainViewController()
+        mainViewController.coordinator = self
+        navigationController.pushViewController(mainViewController, animated: true)
+        print("[LOGGER][MainCoordinator]: MainViewController loaded.")
+    }
+    
+    func didTapLogout() {
+        print("[LOGGER][MainCoordinator]: User tapped logout.")
+        authService.signOut { [weak self] success in
             if success {
-                self?.start()
+                self?.navigationController.popToRootViewController(animated: true)
+                self?.startAuthFlow()
             } else {
-                self?.showErrorAuthMessage()
+                self?.showErrorSignOutMessage()
             }
         }
-        
-        loginVC.modalPresentationStyle = .fullScreen
-        navigationController.present(loginVC, animated: true, completion: nil)
-        
     }
     
-    public func showMain() {
-        //ADD: - добавить сюда экран с фото видео
-    }
-    
-    private func showErrorAuthMessage() {
-        
-        let title = "Ошибка авторизации"
-        let message = "Авторизация прошла с ошибкой. Попробуйте познее"
+    private func showErrorSignOutMessage() {
+        let title = "Ошибка выхода"
+        let message = "Не удалось выйти из аккаунта. Попробуйте ещё раз."
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
         
         navigationController.present(alert, animated: true)
-    }
-    
-    func childDidFinish(_ child: Coordinator?) {
-        // Удаляем дочерний координатор из массива, когда он завершает свою работу
-        guard let child = child else { return }
-        for (index, coordinator) in childCoordinators.enumerated() {
-            if coordinator === child {
-                childCoordinators.remove(at: index)
-                break
-            }
-        }
+        print("[LOGGER][MainCoordinator]: SignOutError. AlertController loaded.")
     }
 }

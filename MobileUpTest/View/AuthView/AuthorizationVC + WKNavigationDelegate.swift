@@ -18,6 +18,7 @@ extension AuthorizationViewController: WKNavigationDelegate {
         activityIndicator.stopAnimating()
         
         noConnectionView.isHidden = false
+        
     }
     
     
