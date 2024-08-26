@@ -16,7 +16,7 @@ class AuthManager {
     }
     
     public var authURL: URL? {
-        return URL(string: "https://oauth.vk.com/authorize?client_id=\(NetworkConstants.app_id)&display=mobile&redirect_uri=https://oauth.vk.com/blank.html&scope=photos&revoke=1&response_type=token&v=5.131")
+        return URL(string: "https://oauth.vk.com/authorize?client_id=\(NetworkConstants.app_id)&display=mobile&redirect_uri=https://oauth.vk.com/blank.html&scope=photos,video,groups&revoke=1&response_type=token&v=5.131")
     }
     
     public var isSignedIn: Bool {

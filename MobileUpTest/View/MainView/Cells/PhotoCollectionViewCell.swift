@@ -50,8 +50,4 @@ extension PhotoCollectionViewCell {
     public func setupCell(imageData: Data) {
         photoImageView.image = UIImage(data: imageData)
     }
-    
-    public func configure(with model: PhotosViewModel) {
-//        photoImageView.image = nil
-    }
 }

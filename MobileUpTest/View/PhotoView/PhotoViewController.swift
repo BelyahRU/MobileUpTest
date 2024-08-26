@@ -10,6 +10,7 @@ import UIKit
 
 class PhotoViewController: UIViewController {
     
+    //MARK: - Properties
     public let photoView = PhotoView()
     
     public var shareButton: UIButton!
@@ -17,11 +18,13 @@ class PhotoViewController: UIViewController {
     
     public var imageData: Data?
     
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
     }
     
+    //MARK: - Methods
     private func configure() {
         setupButtons()
         setupUI()

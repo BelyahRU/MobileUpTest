@@ -14,6 +14,7 @@ final class PhotosCaller {
 
     struct NetworkConstants {
         static let owner_id = "-128666765"
+        //К сожалению я не смог получить все фото из группы, поэтому получаю фото из каждого альбома(могут быть ошибки из-за этого)
         static let album_ids = ["266641437", "0", "263471498", "266310117", "266310086", "269543385", "270745774", "269548231", "266276915"]
         static let basicURL = "https://api.vk.com/method/"
         static let albumPhotosURL = "photos.get?&owner_id=\(owner_id)&album_id="
@@ -87,7 +88,6 @@ final class PhotosCaller {
             completion(.failure(APIError.invalidURL))
             return
         }
-        print(url)
 
         var request = URLRequest(url: url)
         request.httpMethod = HTTPMethod.GET.rawValue

@@ -120,5 +120,6 @@ class MainView: UIView {
         loadingIndicatior.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
+        
     }
 }

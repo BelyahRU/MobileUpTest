@@ -27,14 +27,12 @@ extension MainViewController {
         switch sender.selectedSegmentIndex {
         case 0:
             print("[LOGGER][MainViewController]: Photos selected")
-            //ADD: - logic for photos
-            photosCollectionView.isHidden = false
-            videosCollectionView.isHidden = true
+            setupPhotosLayout()
+            contentCollectionView.reloadData()
         case 1:
             print("[LOGGER][MainViewController]: Videos selected")
-            //ADD: - logic for videos
-            photosCollectionView.isHidden = true
-            videosCollectionView.isHidden = false
+            setupVideosLayout()
+            contentCollectionView.reloadData()
         default:
             break
         }
