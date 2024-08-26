@@ -25,8 +25,8 @@ class AuthManager {
     
     //MARK: - токен
     public var accessToken: String? {
-//        return UserDefaults.standard.string(forKey: "access_token")
-        return "vk1.a.VGcV-wcRZjisSG-xf9cF1StT0SsACHsmSY8bpOhPLfch3ua_-M3xiaRcCorni7UAwOaW6XHm2xruqBMCjDbg6DDbxxzL6K7NZefk1FDgQNV-b31BGUthqI9EcaLKgQgoeG2YL2RMwkZQgaoJhMcxf3UXBHNl6ZbKHn6QMGEJzRBa4v5ibbkMuJNm-JDvEDsHu5sGLV1VM468DWUvcg81VA"
+        return UserDefaults.standard.string(forKey: "access_token")
+//        return "vk1.a.VGcV-wcRZjisSG-xf9cF1StT0SsACHsmSY8bpOhPLfch3ua_-M3xiaRcCorni7UAwOaW6XHm2xruqBMCjDbg6DDbxxzL6K7NZefk1FDgQNV-b31BGUthqI9EcaLKgQgoeG2YL2RMwkZQgaoJhMcxf3UXBHNl6ZbKHn6QMGEJzRBa4v5ibbkMuJNm-JDvEDsHu5sGLV1VM468DWUvcg81VA"
     }
     
     //MARK: - дата окончания действия токена

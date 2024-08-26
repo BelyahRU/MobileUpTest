@@ -34,17 +34,17 @@
 		1A64BADC2C7BFD3000869959 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BADB2C7BFD3000869959 /* VideoCollectionViewCell.swift */; };
 		1A64BAE02C7C046100869959 /* VideoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BADF2C7C046100869959 /* VideoFetcher.swift */; };
 		1A64BAE22C7C05B300869959 /* VideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAE12C7C05B300869959 /* VideosViewModel.swift */; };
-		1A64BAEA2C7C288300869959 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAE92C7C288300869959 /* VideoViewController.swift */; };
-		1A64BAF12C7C2AE300869959 /* SaveImageToGalleryActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAF02C7C2AE300869959 /* SaveImageToGalleryActivity.swift */; };
-		1A64BAF32C7C2C9900869959 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAF22C7C2C9900869959 /* VideoView.swift */; };
-		1A64BAF52C7C2DE000869959 /* VideoVC + Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAF42C7C2DE000869959 /* VideoVC + Action.swift */; };
-		1A64BAF72C7C30F800869959 /* VideoVC + WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAF62C7C30F800869959 /* VideoVC + WebView.swift */; };
 		1A64BAFA2C7C31D200869959 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAF92C7C31D100869959 /* VideoModel.swift */; };
 		1A7554882C7C354D00133C6E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1A7554872C7C354D00133C6E /* SDWebImage */; };
 		1A75548A2C7C354D00133C6E /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A7554892C7C354D00133C6E /* SDWebImageMapKit */; };
 		1A75548D2C7C355900133C6E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A75548C2C7C355900133C6E /* SnapKit */; };
 		1A7554902C7C356100133C6E /* VKID in Frameworks */ = {isa = PBXBuildFile; productRef = 1A75548F2C7C356100133C6E /* VKID */; };
 		1A7554922C7C356100133C6E /* VKIDCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1A7554912C7C356100133C6E /* VKIDCore */; };
+		1A7554952C7C3EF500133C6E /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7554942C7C3EF500133C6E /* VideoViewController.swift */; };
+		1A7554972C7C3F0800133C6E /* SaveImageToGalleryActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7554962C7C3F0800133C6E /* SaveImageToGalleryActivity.swift */; };
+		1A7554992C7C3F1000133C6E /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7554982C7C3F1000133C6E /* VideoView.swift */; };
+		1A75549B2C7C3F1B00133C6E /* VideoVC + Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75549A2C7C3F1B00133C6E /* VideoVC + Action.swift */; };
+		1A75549D2C7C3F2400133C6E /* VideoVC + WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75549C2C7C3F2400133C6E /* VideoVC + WebView.swift */; };
 		1A9A7D2D2C777A5100BF78A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A7D2C2C777A5100BF78A0 /* AppDelegate.swift */; };
 		1A9A7D2F2C777A5100BF78A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A7D2E2C777A5100BF78A0 /* SceneDelegate.swift */; };
 		1A9A7D362C777A5300BF78A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A7D352C777A5300BF78A0 /* Assets.xcassets */; };
@@ -82,12 +82,12 @@
 		1A64BADB2C7BFD3000869959 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		1A64BADF2C7C046100869959 /* VideoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFetcher.swift; sourceTree = "<group>"; };
 		1A64BAE12C7C05B300869959 /* VideosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewModel.swift; sourceTree = "<group>"; };
-		1A64BAE92C7C288300869959 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoViewController.swift; path = ../../../../../Documents/VideoViewController.swift; sourceTree = "<group>"; };
-		1A64BAF02C7C2AE300869959 /* SaveImageToGalleryActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SaveImageToGalleryActivity.swift; path = ../../../../../Documents/SaveImageToGalleryActivity.swift; sourceTree = "<group>"; };
-		1A64BAF22C7C2C9900869959 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoView.swift; path = ../../../../../Documents/VideoView.swift; sourceTree = "<group>"; };
-		1A64BAF42C7C2DE000869959 /* VideoVC + Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VideoVC + Action.swift"; path = "../../../../../Documents/VideoVC + Action.swift"; sourceTree = "<group>"; };
-		1A64BAF62C7C30F800869959 /* VideoVC + WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VideoVC + WebView.swift"; path = "../../../../../Documents/VideoVC + WebView.swift"; sourceTree = "<group>"; };
 		1A64BAF92C7C31D100869959 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		1A7554942C7C3EF500133C6E /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		1A7554962C7C3F0800133C6E /* SaveImageToGalleryActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveImageToGalleryActivity.swift; sourceTree = "<group>"; };
+		1A7554982C7C3F1000133C6E /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		1A75549A2C7C3F1B00133C6E /* VideoVC + Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoVC + Action.swift"; sourceTree = "<group>"; };
+		1A75549C2C7C3F2400133C6E /* VideoVC + WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoVC + WebView.swift"; sourceTree = "<group>"; };
 		1A9A7D292C777A5100BF78A0 /* MobileUpTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileUpTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9A7D2C2C777A5100BF78A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A9A7D2E2C777A5100BF78A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,25 +175,16 @@
 			path = PhotoView;
 			sourceTree = "<group>";
 		};
-		1A7554842C7C34FA00133C6E /* group for videos */ = {
+		1A7554932C7C3EE300133C6E /* VideosView */ = {
 			isa = PBXGroup;
 			children = (
-				1A7554852C7C34FD00133C6E /* videosGroup */,
+				1A7554942C7C3EF500133C6E /* VideoViewController.swift */,
+				1A7554962C7C3F0800133C6E /* SaveImageToGalleryActivity.swift */,
+				1A7554982C7C3F1000133C6E /* VideoView.swift */,
+				1A75549A2C7C3F1B00133C6E /* VideoVC + Action.swift */,
+				1A75549C2C7C3F2400133C6E /* VideoVC + WebView.swift */,
 			);
-			name = "group for videos";
-			path = "../../../../../../Library/Mobile Documents/.Trash/group for videos";
-			sourceTree = "<group>";
-		};
-		1A7554852C7C34FD00133C6E /* videosGroup */ = {
-			isa = PBXGroup;
-			children = (
-				1A64BAE92C7C288300869959 /* VideoViewController.swift */,
-				1A64BAF02C7C2AE300869959 /* SaveImageToGalleryActivity.swift */,
-				1A64BAF22C7C2C9900869959 /* VideoView.swift */,
-				1A64BAF42C7C2DE000869959 /* VideoVC + Action.swift */,
-				1A64BAF62C7C30F800869959 /* VideoVC + WebView.swift */,
-			);
-			path = videosGroup;
+			path = VideosView;
 			sourceTree = "<group>";
 		};
 		1A9A7D202C777A5100BF78A0 = {
@@ -260,7 +251,7 @@
 		1A9A7D432C777DBC00BF78A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A7554842C7C34FA00133C6E /* group for videos */,
+				1A7554932C7C3EE300133C6E /* VideosView */,
 				1A64BAD02C7BEE9000869959 /* PhotoView */,
 				1A64BAAF2C7B6C6F00869959 /* MainView */,
 				1A64BAA52C77FDE600869959 /* NetworkErrorView */,
@@ -383,43 +374,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A64BACB2C7BAA4500869959 /* Photo.swift in Sources */,
-				1A64BAF32C7C2C9900869959 /* VideoView.swift in Sources */,
 				1A64BA932C77E70200869959 /* LoginView.swift in Sources */,
 				1A64BAA22C77F17100869959 /* AuthManager.swift in Sources */,
 				1A64BABE2C7BA76600869959 /* MainVC + CollectionView.swift in Sources */,
+				1A7554952C7C3EF500133C6E /* VideoViewController.swift in Sources */,
 				1A64BAE02C7C046100869959 /* VideoFetcher.swift in Sources */,
 				1A9A7D492C777FAD00BF78A0 /* MainCoordinator.swift in Sources */,
 				1A64BAE22C7C05B300869959 /* VideosViewModel.swift in Sources */,
 				1A64BAAB2C7800BA00869959 /* AuthorizationVC + NetworkErrorDelegate.swift in Sources */,
 				1A9A7D472C777F3D00BF78A0 /* Coordinator.swift in Sources */,
-				1A64BAF52C7C2DE000869959 /* VideoVC + Action.swift in Sources */,
 				1A64BAFA2C7C31D200869959 /* VideoModel.swift in Sources */,
 				1A64BAA42C77F1FB00869959 /* NetworkErrorView.swift in Sources */,
 				1A64BAD82C7BF59D00869959 /* DateManager.swift in Sources */,
 				1A64BADC2C7BFD3000869959 /* VideoCollectionViewCell.swift in Sources */,
 				1A64BACD2C7BAA7A00869959 /* AlbumResponse.swift in Sources */,
-				1A64BAF72C7C30F800869959 /* VideoVC + WebView.swift in Sources */,
 				1A64BAD62C7BF4C800869959 /* Resources.swift in Sources */,
 				1A64BAC82C7BAA1F00869959 /* PhotosCaller.swift in Sources */,
+				1A75549D2C7C3F2400133C6E /* VideoVC + WebView.swift in Sources */,
 				1A64BABC2C7BA52700869959 /* AuthViewModel.swift in Sources */,
 				1A64BAB62C7B715400869959 /* AuthCoordinator.swift in Sources */,
-				1A64BAEA2C7C288300869959 /* VideoViewController.swift in Sources */,
 				1A64BA9D2C77EB7B00869959 /* LoginVC + Action.swift in Sources */,
 				1A64BAB12C7B6C8300869959 /* MainViewController.swift in Sources */,
 				1A64BAC32C7BA7F600869959 /* PhotoCollectionViewCell.swift in Sources */,
 				1A64BAC52C7BA94D00869959 /* PhotosViewModel.swift in Sources */,
 				1A64BAA02C77F0F000869959 /* AuthorizationViewController.swift in Sources */,
+				1A75549B2C7C3F1B00133C6E /* VideoVC + Action.swift in Sources */,
 				1A9A7D2D2C777A5100BF78A0 /* AppDelegate.swift in Sources */,
+				1A7554992C7C3F1000133C6E /* VideoView.swift in Sources */,
 				1A64BAB82C7B75CF00869959 /* MainView.swift in Sources */,
 				1A64BAAD2C7800F700869959 /* AuthorizationVC + WKNavigationDelegate.swift in Sources */,
 				1A64BAD42C7BEEBC00869959 /* PhotoView.swift in Sources */,
 				1A9A7D4C2C777FE300BF78A0 /* LoginViewController.swift in Sources */,
 				1A64BAA92C77FE8200869959 /* NetworkErrorView + Action.swift in Sources */,
+				1A7554972C7C3F0800133C6E /* SaveImageToGalleryActivity.swift in Sources */,
 				1A9A7D2F2C777A5100BF78A0 /* SceneDelegate.swift in Sources */,
 				1A64BABA2C7B7BD700869959 /* MainVC + Action.swift in Sources */,
 				1A64BAD22C7BEEA100869959 /* PhotoViewController.swift in Sources */,
 				1A64BADA2C7BF7DA00869959 /* PhotoVC + Action.swift in Sources */,
-				1A64BAF12C7C2AE300869959 /* SaveImageToGalleryActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
