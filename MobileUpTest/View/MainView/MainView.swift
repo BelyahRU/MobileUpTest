@@ -33,23 +33,31 @@ class MainView: UIView {
         let items = ["Фото", "Видео"]
         let control = UISegmentedControl(items: items)
         control.selectedSegmentIndex = 0
-        control.backgroundColor = .white
+        
+        // Устанавливаем фон сегментов и общий фон контроллера
+        control.backgroundColor = UIColor.white
+        control.selectedSegmentTintColor = UIColor.white
+        
+        // Устанавливаем цвет текста для нормального и выбранного состояния
+        let normalTextAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.black
+        ]
+        let selectedTextAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.black
+        ]
+        
+        control.setTitleTextAttributes(normalTextAttributes, for: .normal)
+        control.setTitleTextAttributes(selectedTextAttributes, for: .selected)
+        control.isHidden = true
         return control
     }()
     
-    public let photosCollectionView: UICollectionView = {
+    public let contentCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let colView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         colView.isHidden = false
-        return colView
-    }()
-    
-    public let videosCollectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
-        let colView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        colView.isHidden = true
+        colView.backgroundColor = .white
         return colView
     }()
     
@@ -84,8 +92,7 @@ class MainView: UIView {
         addSubview(headerTitleLabel)
         addSubview(signOutButton)
         addSubview(photoVideoSegmentPicker)
-        addSubview(photosCollectionView)
-        addSubview(videosCollectionView)
+        addSubview(contentCollectionView)
         addSubview(loadingIndicatior)
     }
     
@@ -107,15 +114,11 @@ class MainView: UIView {
             make.height.equalTo(32)
         }
         
-        photosCollectionView.snp.makeConstraints { make in
+        contentCollectionView.snp.makeConstraints { make in
             make.top.equalTo(photoVideoSegmentPicker.snp.bottom).offset(8)
             make.leading.bottom.trailing.equalToSuperview()
         }
         
-        videosCollectionView.snp.makeConstraints { make in
-            make.top.equalTo(photoVideoSegmentPicker.snp.bottom).offset(8)
-            make.leading.bottom.trailing.equalToSuperview()
-        }
         
         loadingIndicatior.snp.makeConstraints { make in
             make.center.equalToSuperview()

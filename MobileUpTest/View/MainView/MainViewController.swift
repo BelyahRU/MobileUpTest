@@ -18,7 +18,6 @@ class MainViewController: UIViewController {
        public var signOutButton: UIButton!
        public var segmentControl: UISegmentedControl!
        public var contentCollectionView: UICollectionView!
-       public var videosCollectionView: UICollectionView!
        public var loadingIndicator: UIActivityIndicatorView!
        
        //MARK: ViewModel
@@ -43,8 +42,7 @@ class MainViewController: UIViewController {
            loadingIndicator = mainView.loadingIndicatior
            signOutButton = mainView.signOutButton
            segmentControl = mainView.photoVideoSegmentPicker
-           contentCollectionView = mainView.photosCollectionView
-           videosCollectionView = mainView.videosCollectionView
+           contentCollectionView = mainView.contentCollectionView
        }
        
        private func setupUI() {
@@ -75,7 +73,6 @@ class MainViewController: UIViewController {
            dispatchGroup.notify(queue: .main) {
                self.hideLoadingIndicator()
                self.contentCollectionView.reloadData()
-               self.videosCollectionView.reloadData()
            }
        }
        
@@ -94,13 +91,14 @@ class MainViewController: UIViewController {
        }
        
        func fetchVideos(completion: @escaping () -> Void) {
-           videosViewModel.loadVideos { [weak self] result in
+           videosViewModel.loadVideos { result in
                DispatchQueue.main.async {
                    switch result {
                    case .success:
                        print("OK")
                    case .failure(let error):
-                       self?.coordinator?.showErrorLoadingPhotosMessage(error: error.localizedDescription)
+                       print(error)
+                       print("Error")
                    }
                    completion()
                }
@@ -119,6 +117,7 @@ class MainViewController: UIViewController {
                self.loadingIndicator.isHidden = true
                self.loadingIndicator.stopAnimating()
            }
+           self.segmentControl.isHidden = false
        }
 
 }

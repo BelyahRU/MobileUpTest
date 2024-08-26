@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A64BA8F2C77A3BB00869959 /* VKID in Frameworks */ = {isa = PBXBuildFile; productRef = 1A64BA8E2C77A3BB00869959 /* VKID */; };
-		1A64BA912C77A3BB00869959 /* VKIDCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1A64BA902C77A3BB00869959 /* VKIDCore */; };
 		1A64BA932C77E70200869959 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BA922C77E70200869959 /* LoginView.swift */; };
-		1A64BA9B2C77E8EF00869959 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A64BA9A2C77E8EF00869959 /* SnapKit */; };
 		1A64BA9D2C77EB7B00869959 /* LoginVC + Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BA9C2C77EB7B00869959 /* LoginVC + Action.swift */; };
 		1A64BAA02C77F0F000869959 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BA9F2C77F0F000869959 /* AuthorizationViewController.swift */; };
 		1A64BAA22C77F17100869959 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAA12C77F17100869959 /* AuthManager.swift */; };
@@ -37,14 +34,17 @@
 		1A64BADC2C7BFD3000869959 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BADB2C7BFD3000869959 /* VideoCollectionViewCell.swift */; };
 		1A64BAE02C7C046100869959 /* VideoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BADF2C7C046100869959 /* VideoFetcher.swift */; };
 		1A64BAE22C7C05B300869959 /* VideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAE12C7C05B300869959 /* VideosViewModel.swift */; };
-		1A64BAE52C7C204000869959 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1A64BAE42C7C204000869959 /* SDWebImage */; };
-		1A64BAE72C7C204000869959 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A64BAE62C7C204000869959 /* SDWebImageMapKit */; };
 		1A64BAEA2C7C288300869959 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAE92C7C288300869959 /* VideoViewController.swift */; };
 		1A64BAF12C7C2AE300869959 /* SaveImageToGalleryActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAF02C7C2AE300869959 /* SaveImageToGalleryActivity.swift */; };
 		1A64BAF32C7C2C9900869959 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAF22C7C2C9900869959 /* VideoView.swift */; };
 		1A64BAF52C7C2DE000869959 /* VideoVC + Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAF42C7C2DE000869959 /* VideoVC + Action.swift */; };
 		1A64BAF72C7C30F800869959 /* VideoVC + WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAF62C7C30F800869959 /* VideoVC + WebView.swift */; };
 		1A64BAFA2C7C31D200869959 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BAF92C7C31D100869959 /* VideoModel.swift */; };
+		1A7554882C7C354D00133C6E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1A7554872C7C354D00133C6E /* SDWebImage */; };
+		1A75548A2C7C354D00133C6E /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A7554892C7C354D00133C6E /* SDWebImageMapKit */; };
+		1A75548D2C7C355900133C6E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A75548C2C7C355900133C6E /* SnapKit */; };
+		1A7554902C7C356100133C6E /* VKID in Frameworks */ = {isa = PBXBuildFile; productRef = 1A75548F2C7C356100133C6E /* VKID */; };
+		1A7554922C7C356100133C6E /* VKIDCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1A7554912C7C356100133C6E /* VKIDCore */; };
 		1A9A7D2D2C777A5100BF78A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A7D2C2C777A5100BF78A0 /* AppDelegate.swift */; };
 		1A9A7D2F2C777A5100BF78A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A7D2E2C777A5100BF78A0 /* SceneDelegate.swift */; };
 		1A9A7D362C777A5300BF78A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A7D352C777A5300BF78A0 /* Assets.xcassets */; };
@@ -82,11 +82,11 @@
 		1A64BADB2C7BFD3000869959 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		1A64BADF2C7C046100869959 /* VideoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFetcher.swift; sourceTree = "<group>"; };
 		1A64BAE12C7C05B300869959 /* VideosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewModel.swift; sourceTree = "<group>"; };
-		1A64BAE92C7C288300869959 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoViewController.swift; path = ../../../../../../../Documents/VideoViewController.swift; sourceTree = "<group>"; };
-		1A64BAF02C7C2AE300869959 /* SaveImageToGalleryActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SaveImageToGalleryActivity.swift; path = ../../../../../../../Documents/SaveImageToGalleryActivity.swift; sourceTree = "<group>"; };
-		1A64BAF22C7C2C9900869959 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoView.swift; path = ../../../../../../../Documents/VideoView.swift; sourceTree = "<group>"; };
-		1A64BAF42C7C2DE000869959 /* VideoVC + Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VideoVC + Action.swift"; path = "../../../../../../../Documents/VideoVC + Action.swift"; sourceTree = "<group>"; };
-		1A64BAF62C7C30F800869959 /* VideoVC + WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VideoVC + WebView.swift"; path = "../../../../../../../Documents/VideoVC + WebView.swift"; sourceTree = "<group>"; };
+		1A64BAE92C7C288300869959 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoViewController.swift; path = ../../../../../Documents/VideoViewController.swift; sourceTree = "<group>"; };
+		1A64BAF02C7C2AE300869959 /* SaveImageToGalleryActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SaveImageToGalleryActivity.swift; path = ../../../../../Documents/SaveImageToGalleryActivity.swift; sourceTree = "<group>"; };
+		1A64BAF22C7C2C9900869959 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoView.swift; path = ../../../../../Documents/VideoView.swift; sourceTree = "<group>"; };
+		1A64BAF42C7C2DE000869959 /* VideoVC + Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VideoVC + Action.swift"; path = "../../../../../Documents/VideoVC + Action.swift"; sourceTree = "<group>"; };
+		1A64BAF62C7C30F800869959 /* VideoVC + WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VideoVC + WebView.swift"; path = "../../../../../Documents/VideoVC + WebView.swift"; sourceTree = "<group>"; };
 		1A64BAF92C7C31D100869959 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		1A9A7D292C777A5100BF78A0 /* MobileUpTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileUpTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9A7D2C2C777A5100BF78A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,11 +104,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A64BA9B2C77E8EF00869959 /* SnapKit in Frameworks */,
-				1A64BAE72C7C204000869959 /* SDWebImageMapKit in Frameworks */,
-				1A64BA8F2C77A3BB00869959 /* VKID in Frameworks */,
-				1A64BAE52C7C204000869959 /* SDWebImage in Frameworks */,
-				1A64BA912C77A3BB00869959 /* VKIDCore in Frameworks */,
+				1A75548D2C7C355900133C6E /* SnapKit in Frameworks */,
+				1A75548A2C7C354D00133C6E /* SDWebImageMapKit in Frameworks */,
+				1A7554922C7C356100133C6E /* VKIDCore in Frameworks */,
+				1A7554902C7C356100133C6E /* VKID in Frameworks */,
+				1A7554882C7C354D00133C6E /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +175,16 @@
 			path = PhotoView;
 			sourceTree = "<group>";
 		};
-		1A64BAE82C7C286F00869959 /* New Group */ = {
+		1A7554842C7C34FA00133C6E /* group for videos */ = {
+			isa = PBXGroup;
+			children = (
+				1A7554852C7C34FD00133C6E /* videosGroup */,
+			);
+			name = "group for videos";
+			path = "../../../../../../Library/Mobile Documents/.Trash/group for videos";
+			sourceTree = "<group>";
+		};
+		1A7554852C7C34FD00133C6E /* videosGroup */ = {
 			isa = PBXGroup;
 			children = (
 				1A64BAE92C7C288300869959 /* VideoViewController.swift */,
@@ -184,7 +193,7 @@
 				1A64BAF42C7C2DE000869959 /* VideoVC + Action.swift */,
 				1A64BAF62C7C30F800869959 /* VideoVC + WebView.swift */,
 			);
-			path = "New Group";
+			path = videosGroup;
 			sourceTree = "<group>";
 		};
 		1A9A7D202C777A5100BF78A0 = {
@@ -230,10 +239,10 @@
 				1A64BACC2C7BAA7A00869959 /* AlbumResponse.swift */,
 				1A64BACA2C7BAA4500869959 /* Photo.swift */,
 				1A64BAF92C7C31D100869959 /* VideoModel.swift */,
+				1A64BAD72C7BF59D00869959 /* DateManager.swift */,
 				1A64BAC62C7BAA0700869959 /* Networking */,
 				1A9A7D452C777E7800BF78A0 /* Support */,
 				1A9A7D442C777E7100BF78A0 /* Resources */,
-				1A64BAD72C7BF59D00869959 /* DateManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,7 +260,7 @@
 		1A9A7D432C777DBC00BF78A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A64BAE82C7C286F00869959 /* New Group */,
+				1A7554842C7C34FA00133C6E /* group for videos */,
 				1A64BAD02C7BEE9000869959 /* PhotoView */,
 				1A64BAAF2C7B6C6F00869959 /* MainView */,
 				1A64BAA52C77FDE600869959 /* NetworkErrorView */,
@@ -308,11 +317,11 @@
 			);
 			name = MobileUpTest;
 			packageProductDependencies = (
-				1A64BA8E2C77A3BB00869959 /* VKID */,
-				1A64BA902C77A3BB00869959 /* VKIDCore */,
-				1A64BA9A2C77E8EF00869959 /* SnapKit */,
-				1A64BAE42C7C204000869959 /* SDWebImage */,
-				1A64BAE62C7C204000869959 /* SDWebImageMapKit */,
+				1A7554872C7C354D00133C6E /* SDWebImage */,
+				1A7554892C7C354D00133C6E /* SDWebImageMapKit */,
+				1A75548C2C7C355900133C6E /* SnapKit */,
+				1A75548F2C7C356100133C6E /* VKID */,
+				1A7554912C7C356100133C6E /* VKIDCore */,
 			);
 			productName = MobileUpTest;
 			productReference = 1A9A7D292C777A5100BF78A0 /* MobileUpTest.app */;
@@ -343,9 +352,9 @@
 			);
 			mainGroup = 1A9A7D202C777A5100BF78A0;
 			packageReferences = (
-				1A64BA8D2C77A3BB00869959 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */,
-				1A64BA992C77E8EE00869959 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				1A64BAE32C7C204000869959 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				1A7554862C7C354D00133C6E /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				1A75548B2C7C355900133C6E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1A75548E2C7C356100133C6E /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */,
 			);
 			productRefGroup = 1A9A7D2A2C777A5100BF78A0 /* Products */;
 			projectDirPath = "";
@@ -627,23 +636,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1A64BA8D2C77A3BB00869959 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/VKCOM/vkid-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.1.0;
-			};
-		};
-		1A64BA992C77E8EE00869959 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
-			};
-		};
-		1A64BAE32C7C204000869959 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+		1A7554862C7C354D00133C6E /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
 			requirement = {
@@ -651,33 +644,49 @@
 				minimumVersion = 5.19.7;
 			};
 		};
+		1A75548B2C7C355900133C6E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		1A75548E2C7C356100133C6E /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VKCOM/vkid-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1A64BA8E2C77A3BB00869959 /* VKID */ = {
+		1A7554872C7C354D00133C6E /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1A64BA8D2C77A3BB00869959 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */;
-			productName = VKID;
-		};
-		1A64BA902C77A3BB00869959 /* VKIDCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1A64BA8D2C77A3BB00869959 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */;
-			productName = VKIDCore;
-		};
-		1A64BA9A2C77E8EF00869959 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1A64BA992C77E8EE00869959 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		1A64BAE42C7C204000869959 /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1A64BAE32C7C204000869959 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			package = 1A7554862C7C354D00133C6E /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
 		};
-		1A64BAE62C7C204000869959 /* SDWebImageMapKit */ = {
+		1A7554892C7C354D00133C6E /* SDWebImageMapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1A64BAE32C7C204000869959 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			package = 1A7554862C7C354D00133C6E /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
+		};
+		1A75548C2C7C355900133C6E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A75548B2C7C355900133C6E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		1A75548F2C7C356100133C6E /* VKID */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A75548E2C7C356100133C6E /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */;
+			productName = VKID;
+		};
+		1A7554912C7C356100133C6E /* VKIDCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A75548E2C7C356100133C6E /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */;
+			productName = VKIDCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
